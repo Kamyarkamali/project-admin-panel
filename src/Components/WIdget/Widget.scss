@@ -1,0 +1,38 @@
+.widget{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 10px 19px 28px -14px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 19px 28px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 19px 28px -13px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    height: 100px;
+
+    .users{
+        color: gray;
+    }
+    .counter{
+        font-size: 25px;
+    }
+    .link{
+        font-weight: bold;
+        color: gray;
+        border-bottom: 1px solid #666;
+    }
+
+    .percent{
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+
+        &.positive{
+            color: green;
+        }
+
+        &.unpositive{
+            color: red;
+        }
+    }
+   
+}
