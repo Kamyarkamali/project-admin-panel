@@ -3,6 +3,8 @@ import React from 'react';
 import Sidbar from '../../Sidbar/Sidbar';
 import Navbar from '../../Navbar/Navbar';
 import Widget from '../../WIdget/Widget';
+import Fetchare from '../../Fetchare/Fetchare';
+import Charts from '../../Charts/Charts';
 //Stled
 import "./home.scss";
 
@@ -13,10 +15,14 @@ function Home() {
       <div className="homecontainer">
         <Navbar/>
         <div className="widgets">
-          <Widget/>
-          <Widget/>
-          <Widget/>
-          <Widget/>
+          <Widget type="users"/>
+          <Widget type="orders"/>
+          <Widget type="ernanings"/>
+          <Widget type="balance"/>
+        </div>
+        <div className="charts">
+          <Fetchare/>
+          <Charts/>
         </div>
         </div>      
 
