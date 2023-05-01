@@ -24,6 +24,11 @@ function Home() {
           <Fetchare/>
           <Charts/>
         </div>
+        <div className="listcontainer">
+          <div className="listTitle">
+            
+          </div>
+        </div>
         </div>      
 
     </div>

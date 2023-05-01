@@ -1,7 +1,7 @@
 import React from 'react'
 
 //Styled
-import "./New.scss";
+import "./new.scss";
 
 function New() {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 
 ///Styled
-import "./Single.scss";
+import "./single.scss";
 
 function Single() {
   return (
