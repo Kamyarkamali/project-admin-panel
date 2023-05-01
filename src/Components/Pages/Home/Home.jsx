@@ -5,6 +5,7 @@ import Navbar from '../../Navbar/Navbar';
 import Widget from '../../WIdget/Widget';
 import Fetchare from '../../Fetchare/Fetchare';
 import Charts from '../../Charts/Charts';
+import Tabale from '../../tabale/Tabale';
 //Stled
 import "./home.scss";
 
@@ -26,7 +27,7 @@ function Home() {
         </div>
         <div className="listcontainer">
           <div className="listTitle">
-            
+            <Tabale/>
           </div>
         </div>
         </div>      
