@@ -17,10 +17,13 @@ import StorefrontIcon from '@mui/icons-material/Storefront';
 import TroubleshootIcon from '@mui/icons-material/Troubleshoot';
 import WysiwygIcon from '@mui/icons-material/Wysiwyg';
 
+///React-Router-Dom
+import { Link } from "react-router-dom";
+
 function Sidbar() {
   return (
     <div className='sidebar'>
-        <div className='top'><span className='logo'>Admin</span></div>
+        <div className='top'><span className='logo'><Link to={"/"}>Admin</Link></span></div>
       <hr/>
         <div className='center'>
             <ul>

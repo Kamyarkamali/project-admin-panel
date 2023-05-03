@@ -13,7 +13,7 @@ function App() {
       <div>
         <Routes>
 
-          <Route path="/*" element={<Navigate to="/"/>}/>
+          {/* <Route path="/*" element={<Navigate to="/"/>}/> */}
 
           <Route path="/" element={<Home/>}/>
 
@@ -21,7 +21,7 @@ function App() {
 
           <Route path="/login" element={<Login/>}/>
 
-          <Route path="/singe/:userId" element={<Singel/>}/>
+          <Route path="/singel/:id" element={<Singel/>}/>
 
           <Route path="/new" element={<New/>}/>
 

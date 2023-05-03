@@ -1,0 +1,80 @@
+.singel{
+    display: flex;
+    width: 100%;
+
+    .singelcontainer{
+        flex: 6;
+    }
+
+    .top{
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+
+        .left{
+            flex: 1;
+            -webkit-box-shadow: -5px 11px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: -5px 11px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: -4px 4px 4px 0px rgba(0,0,0,0.75);
+            padding: 20px;
+            position: relative;
+            border-radius: 1rem;
+
+            .item{
+                display: flex;
+                gap:20px;
+            }
+
+            .editpage{
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            .editpage{
+                color: rgb(123, 123, 195);
+                background-color: rgb(191, 185, 185);
+                padding: 4px;
+                border-radius: 2px;
+                cursor: pointer;
+                font-size: 13px;
+                
+            }
+
+            .itemkey{
+                font-weight: 500;
+            }
+            .itemvalue{
+                font-weight: bold;
+                color: #555;
+                margin-left: 10px;
+            }
+
+            .detailseitem{
+                margin-top: 10px;
+                font-size: 14px;
+            }
+
+            .item img{
+                width:100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+
+        .right{
+            flex:2
+        }
+    }
+
+    .titlee{
+        font-size: 16px;
+        color: gray;
+        text-align: center;
+    }
+    .bottom{
+        padding: 10px;
+        margin: 10px 20px;
+    }
+}

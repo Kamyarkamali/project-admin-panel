@@ -1,0 +1,26 @@
+.datatabalse{
+    padding: 20px;
+    height: 600px;
+
+    .callaction{
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        align-items: center;
+
+        .viebutton{
+            border: 2px solid blue;
+            color: gray;
+            padding: 3px;
+            border-radius: 4px;
+        }
+
+        .deletbutton{
+            border: 2px  solid red;
+            padding: 3px;
+            border-radius: 4px;
+            color: gray;
+        }
+    }
+}
