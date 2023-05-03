@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 ///Styled
 import "./sidbar.scss";
@@ -16,13 +16,19 @@ import BorderColorIcon from '@mui/icons-material/BorderColor';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import TroubleshootIcon from '@mui/icons-material/Troubleshoot';
 import WysiwygIcon from '@mui/icons-material/Wysiwyg';
+import "../../styled/dark.scss";
+import { DarkModContext } from '../Context/DarkmodeContext'; 
+import { useContext } from 'react';
 
 ///React-Router-Dom
 import { Link } from "react-router-dom";
 
 function Sidbar() {
+  
+  const {dispatch}=useContext(DarkModContext)
+  const {darkMode}=useContext(DarkModContext)
   return (
-    <div className='sidebar'>
+    <div className={darkMode ? "sidebar dark" : "sidebar"}>
         <div className='top'><span className='logo'><Link to={"/"}>Admin</Link></span></div>
       <hr/>
         <div className='center'>
@@ -34,8 +40,10 @@ function Sidbar() {
               </li>
               <p className='title'>Lists</p>
               <li>
+                <Link to={'/list'}>
                 <PersonIcon className="icon"/>
                 <soan>Users</soan>
+                </Link>
               </li>
               <li>
                 <BorderColorIcon className="icon"/>
@@ -86,8 +94,8 @@ function Sidbar() {
         </div>
 
         <div className='bottom'>
-            <div className='color'></div>
-            <div className='color'></div>
+            <div className='color' onClick={()=>dispatch({type:"DARK"})}></div>
+            <div className='color' onClick={()=>dispatch({type:"LIGHT"})}></div>
 
         </div>
     </div>

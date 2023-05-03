@@ -5,6 +5,7 @@ import { DataGrid } from '@mui/x-data-grid';
 ///Styled
 import "./dataTabale.scss";
 import dataTable from "../dataTabale"
+import { Link } from 'react-router-dom';
 
 
 
@@ -45,7 +46,9 @@ export default function DataTable() {
   const actionColumn=[{field:"action",headername:"Action",width:200,renderCell:()=>{
     return(
       <div className="callaction">
+        <Link to={`/singel/${dataTable.id}`}>
         <div className="viebutton">View</div>
+        </Link>
         <div className="deletbutton">Delete</div>
       </div>
     )
